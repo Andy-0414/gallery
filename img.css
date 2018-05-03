@@ -5,17 +5,21 @@ div.listBox{
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 00px;
-    padding-top: 100px;
+    padding: 0px;
+    padding-top: 90px;
     height: 100%;
 
     background-color: #F1ECE9;
     box-shadow: 0px 0px 20px #333A42;
 
+    transition: 0.5s;
+
     z-index: 1;
 }
-section.centerBox{
-    width: 95%;
+#list{
+    text-align:center; 
+    padding-top: 10px;
+    width: 96%;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -37,19 +41,15 @@ button.plus_btn{
     
     z-index: 4;
 }
-
 div.imgBox{
     transition: 0.3s;
-
     display: inline-block;
     position: relative;
 
-    margin: 0;
-    width: 30.7%;
+    margin: 5px auto;
+    width: 23.3%;
     height: 200px;
-    margin-left: 1%;
-    margin-bottom: 10px;
-
+    
     border: 3px dashed #485058;
     border-radius: 10px;
     box-shadow: 0px 5px 10px #A6A5A1;
@@ -59,7 +59,9 @@ div.imgBox:hover{
     box-shadow: 0px 8px 10px #A6A5A1;
     bottom: 3px;
 }
-
+div.imgBox:not(:nth-child(4n+1)){
+    margin-left: 1%;
+}
 div.imgBox img{ 
     width: 100%;
     margin: 0;
@@ -68,16 +70,19 @@ div.imgBox img{
 
     box-shadow: 0px 0px 20px #333A42;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     div.listBox{
         width: 100%;
     }
     div.imgBox{
-        width: 100%;
+        width: 99%;
         margin-bottom: 20px;
     }
     li.main{
         width: 100%;
         text-align: center;
+    }
+    div.imgBox:not(:nth-child(4n+1)){
+        margin-left: 0%;
     }
 }
