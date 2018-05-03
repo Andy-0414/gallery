@@ -21,9 +21,11 @@ section.centerBox{
     margin-right: auto;
 }
 button.plus_btn{
+    outline-style: none;
+    
     position: fixed;
-    margin-left: 80%;
-    margin-top: 40%;
+    right: 5%;
+    top: 85%;
     width: 80px;
     height: 80px;
 
@@ -31,10 +33,11 @@ button.plus_btn{
     border-radius: 50%;
 
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
     
     z-index: 4;
 }
+
 div.imgBox{
     transition: 0.3s;
 
@@ -42,7 +45,7 @@ div.imgBox{
     position: relative;
 
     margin: 0;
-    width: 31%;
+    width: 30.7%;
     height: 200px;
     margin-left: 1%;
     margin-bottom: 10px;
@@ -76,9 +79,5 @@ div.imgBox img{
     li.main{
         width: 100%;
         text-align: center;
-    }
-    button.plus_btn
-    {
-        margin-top: 80%;
     }
 }

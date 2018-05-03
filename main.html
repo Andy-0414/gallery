@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="img.css">
 
         <title>Gallery</title>
+        <script src="create.js"></script>
     </head>
     <body>
         <nav>
@@ -15,20 +16,13 @@
                 <li class="main">Gallery</li>
             </ul>
         </nav>
-        <button class="plus_btn">
+        <button class="plus_btn" onclick="createImgBox()">
             +
         </button>
         <div class="listBox">
-            <section class="centerBox">
-                <div class="imgBox">
-                </div>
-                <div class="imgBox">
-                </div>
-                <div class="imgBox">
-                </div>
-                <div class="imgBox">
-                </div>
+            <section id="list" class="centerBox">
             </section>
         </div>
     </body>
+    
 </html>
