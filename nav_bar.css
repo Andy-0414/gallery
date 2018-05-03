@@ -9,10 +9,18 @@ nav{
     height: 80px;
 
     background-color: #D7443F;
-    box-shadow: 0px 2px 20px #333A42;
+
+    transition: 0.4s;
 
     z-index: 2;
 }
+nav.boxSh{
+    box-shadow: 0px 2px 20px #333A42;
+}
+nav.nonBoxSh{
+    box-shadow: 0px 0px 5px #333A42;
+}
+
 ul {
     position: relative;
     list-style-type: none;
